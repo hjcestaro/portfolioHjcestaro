@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.inicio {
+    background-image: url('./dogComputer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.apresentacao {
+    background-image: linear-gradient(to bottom, rgba(41, 41, 41, 0.144), rgba(0, 0, 0.6)); 
+}
+
+.apresentacao h1 {
+    font-size: 65px;
+    color: #fff;
+    text-shadow: 3px 2px black;
+    text-transform: uppercase;
+}
+
+.apresentacao .text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 90vh;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 65px;
+    font-weight: 300
+}
+
+.tntfaz {
+    display: flex;
+}
+
+.tntfaz img {
+    width: 280px;
+    border-radius: 50%;
+    margin: 35px;
+}
+
+.tntfaz p {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    margin: 15px;
+}
+
+.port h2 {
+    padding-top: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+.port {
+    background-color: rgb(49, 49, 49);
+    padding: 10px;
+}
+
+.portfolio {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+   grid-gap: 2rem;
+   justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container p {
+    text-align: center;
+    padding-top: 15px;
+    color: #fff;
+}
+
+.container img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.container img:hover {
+    transform: translateY(-10px);
+}
+
+.contato-redes {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redesSociais {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.redesSociais li a {
+    color: rgb(49, 49, 49);
+    padding: 25px;
+    font-size: 55px;
+}
+
+.rodape {
+    background: rgb(49, 49, 49);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.rodape p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 858px) {
+    .inicio {
+        background-position: center;
+    }
+
+    .navbar-nav {
+        min-height: 92vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .apresentacao h1 {
+        font-size: 50px;
+    }
+
+    .apresentacao .text {
+        align-items: center;
+    }
+
+    .tntfaz {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+
+    .redesSociais li a {
+        font-size: 50px;
+        padding: 0 30px;
+    }
+}
