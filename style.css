@@ -1,40 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;900&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-}
-
 .inicio {
-    background-image: url('./dogComputer.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.apresentacao {
-    background-image: linear-gradient(to bottom, rgba(41, 41, 41, 0.144), rgba(0, 0, 0.6)); 
-}
-
-.apresentacao h1 {
-    font-size: 65px;
-    color: #fff;
-    text-shadow: 3px 2px black;
-    text-transform: uppercase;
-}
-
-.apresentacao .text {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    background: rgb(180, 180, 180);
+    height: 87vh;
     width: 100%;
-    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inicio h1 {
+    font-size: 65px;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .titulo {
@@ -133,6 +110,10 @@ body {
 @media (max-width: 858px) {
     .inicio {
         background-position: center;
+    }
+
+    .inicio h1 {
+        font-size: 50px;
     }
 
     .navbar-nav {
