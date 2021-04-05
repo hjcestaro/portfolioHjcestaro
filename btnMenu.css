@@ -7,11 +7,11 @@
 }
 
 .btnMenu_open {
-    background-image: url('./menu.png');
+    background-image: url('./img/menu.png');
 }   
 
 .btnMenu_close {
     background-color: #747c81;
-    background-image: url('./menu.png');
+    background-image: url('./img/menu.png');
 
 }
