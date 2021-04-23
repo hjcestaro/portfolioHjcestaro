@@ -10,31 +10,24 @@
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" />
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="btnMenu.css">
-    <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav class="wrap-menu">
-        <a href="#" class="btnMenu btnMenu_open">Menu</a>
-
-        <ul id="menu" class="menu">
-            <li class="btnMenu btnMenu_close">Sair</li>
-            <li class="menu-item">
-                <a href="#sobre" class="menu-item-action">Sobre</a>
-            </li>
-            <li class="menu-item">
-                <a href="#port" class="menu-item-action">Portfólio</a>
-            </li>
-            <li class="menu-item">
-                <a href="#contato" class="menu-item-action">Contato</a>
-            </li>
+    <header>
+        <a href="#" class="logo">HJCESTARO</a>
+        <div class="menuToggle" onClick="showMenu()"></div>
+        <ul class="navegacao">
+            <li><a href="#sobre" onClick="showMenu()">Sobre</a></li>
+            <li><a href="#port" onClick="showMenu()">Portfólio</a></li>
+            <li><a href="#contato" onClick="showMenu()">Contato</a></li>
         </ul>
-    </nav>
+    </header>
 
-    <section class="inicio"></section>
+    <section class="inicio">
+        <h1>Olá, <span>bem vindo!</span></h1>
+    </section>
 
     <section id="sobre" class="sobre">
         <h2 class="titulo">Sobre</h2>
@@ -128,7 +121,7 @@
         <p>Feito com <span style="color: red;">❤</span> por Henrique Julio Cestaro</p>
     </footer>
 
-<script src="./js/btnMenu.js"></script>
+<script src="./script.js"></script>
 </body>
 
 </html>

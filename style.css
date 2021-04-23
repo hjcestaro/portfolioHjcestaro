@@ -1,11 +1,71 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+header.sticky {
+    background-color: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+header.sticky .logo {
+    color: #111;
+}
+
+header.sticky .navegacao li a{
+    color: #111;
+}
+
+header .logo {
+    font-size: 2em;
+    font-weight: 300;
+    text-decoration: none;
+    color: #fff;
+}
+
+header .navegacao {
+    display: flex;
+    position: relative; 
+}
+
+header .navegacao li {
+    margin-left: 30px;
+}
+
+header .navegacao li a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #fff;
+}
+
 .inicio {
-    background-color: #333;
-    background-image: url('./img/inicio-bg.jpg');
-    background-blend-mode: multiply;
-    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('./img/bg.jpg');
     background-size: cover;
     background-position: center;
-    padding: 40vh 0;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.inicio h1 {
+    color: #fff;
+    font-size: 5em;
+    font-weight: 300;
+}
+
+.inicio h1 span {
+    color: #b32e2e;
 }
 
 .titulo {
@@ -125,29 +185,70 @@
     margin-bottom: 0;
 }
 
-@media (max-width: 858px) {
-    .inicio {
+@media (max-width: 991px) {
+
+    header, 
+    header.sticky {
+        padding: 10px 20px;
+    }
+
+    header .navegacao {
+        display: none;
+    }
+
+    header .navegacao li {
+        margin-left: 0;
+    }
+
+    header .navegacao li a {
+        color: #111;
+        font-size: 1.9em
+    }
+
+    header.sticky .menuToggle {
+        filter: invert(1);
+    }
+
+    .menuToggle {
+        position: relative;
+        background-image: url('./img/menu.png');
         background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+    
+    .menuToggle.active {
+        background-image: url('./img/close.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 28px;
+    }
+
+    header .navegacao li {
+        margin-left: 0;
+    }
+
+    header .navegacao.active {
+        position: fixed;
+        top: 68px;
+        background: #fff;
+        width: 100%;
+        height: calc(100% - 68px);
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .inicio h1 {
-        font-size: 50px;
+        text-align: center;
+        font-size: 3.5rem;
     }
-
-    .navbar-nav {
-        min-height: 92vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    .apresentacao h1 {
-        font-size: 50px;
-    }
-
-    .apresentacao .text {
-        align-items: center;
-    }
+   
 
     .tntfaz {
         display: flex;
